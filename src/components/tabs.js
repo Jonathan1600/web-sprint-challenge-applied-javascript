@@ -44,7 +44,7 @@ const tabsAppender = (selector) => {
     .get("https://lambda-times-api.herokuapp.com/topics")
     .then((res) => {
       let topics = res.data.topics;
-      console.log(topics);
+
       father.appendChild(Tabs(topics));
     })
     .catch((err) => {
